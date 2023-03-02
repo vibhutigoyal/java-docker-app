@@ -28,7 +28,7 @@ pipeline {
 			}
 		stage("testing website") {
 			steps {
-				sh 'curl --silent http://44.193.5.211:8184/java-web-app/ '
+				sh 'curl --silent http://3.234.226.88:8184/java-web-app/ '
 					
 				}
 			}

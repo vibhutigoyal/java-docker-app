@@ -40,7 +40,7 @@ pipeline {
 			steps {
 			 sshagent(['ec2-user']) {
 	
-	                    sh "ssh -o StrictHostKeyChecking=no ec2-user@44.199.229.174 sudo docker run  -d  -p  8185:8080  srronak/javatest-app:$BUILD_TAG"
+	                    sh "ssh -o StrictHostKeyChecking=no ec2-user@3.231.158.190 sudo docker run  -d  -p  8185:8080  srronak/javatest-app:$BUILD_TAG"
 				}
 			}
 		}

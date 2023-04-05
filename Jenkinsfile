@@ -14,8 +14,8 @@ pipeline {
 			}
 		stage("Image") {
 			steps {
-				sh 'docker build -t java-repo:$BUILD_TAG .'
-				sh 'docker tag java-repo:$BUILD_TAG vibhutigoyal/pipeline-java:$BUILD_TAG'
+				sh 'sudo docker build -t java-repo:$BUILD_TAG .'
+				sh 'sudo docker tag java-repo:$BUILD_TAG vibhutigoyal/pipeline-java:$BUILD_TAG'
 				}
 			}	
 
